@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupping tags</title>
+    <style>
+        body{
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 15px;                    /*CANTOS ARREDONDADOS*/
+            box-shadow: 2px 2px 2px black;
+        }
+        nav{
+            background-color: lightslategray;
+            color: white;
+            font-weight: bold;            
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;          /*SOMBRA, PODE USAR O INPECIONAR DO GOOGLE*/
+
+        }
+        nav >a{
+            margin-right: 30px;                       /*DESLOCAMENTO DA MARGEM INTERNA EM 30PX*/
+        }
+
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 2px 2px 2px black;
+        }
+        section#assuntos{
+            text-align: center;
+        }
+        article{
+            background-color: gray;
+            margin: 5px;
+            padding: 3px;
+        }
+        article >aside{
+            background-color: red;
+            margin: 0px;
+            padding: 1px;
+        }
+        aside >p{
+            margin: 0px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        footer>p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 150px;
+            width: 150px;
+            margin: auto;
+            background-color: white;
+            border-radius: 50%;             /*deixa redondo*/
+        }
+    </style>
+</head>
+<body>
+    <header>                            <!--CABEÇALHO-->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>                              <!--PRINCIPAL-->
+        <section id="assuntos">         <!--SEÇÃO-->
+        <h2>o Juro negativo e a guerra ao dinheiro</h2>
+        </section>
+
+        <section id="noticias">
+            <article>                   <!--ARTIGO-->
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugit, provident voluptatibus neque exercitationem nisi eaque, quod, quo in placeat omnis veritatis sit deserunt earum incidunt quaerat consequatur mollitia quas.</p>
+                <aside><p>Artigo escrito por Roney</p></aside>  <!--APARTE-->
+            </article>
+        </section>
+    </main>
+
+    <footer>                            <!--RODAPÉ-->
+        <p>Desenvolvido por Roney Black-Pill</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>

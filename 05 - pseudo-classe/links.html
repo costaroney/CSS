@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        :   = pseudo-class
+        ::  = pseudo elements
+        >   = filho
+        */
+
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: blue;
+        }
+
+        a:hover{
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: black;
+        }
+        a::after{
+            content: '[link]';
+            color: gray;
+            font-weight: 100;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li>
+            <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
+        </li>
+        <li><a href="https://www.cursoemvideo.com/curso">CURSOS</a></li>
+        <li><a href="https://coinmarketcap.com/">CRIPTOS</a></li>
+    </ul>
+    
+</body>
+</html>
