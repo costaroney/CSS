@@ -36,21 +36,57 @@ body{
 }
 
 header{
-    background-color: var(--cor6);
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor4),var(--cor6));
+    box-shadow: 0px 0px 10px black;
 }
 header h1{
     font-family: var(--font-destaque);
     color: var(--cor1);
+    font-size: 3em;
+    text-shadow: 2px 2px 1px black;
+    padding: 30px;
     
 }
-nav{
-    background-color: #2fa866;
+header p{
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 1px black;
+    padding-bottom: 50px;
 }
 
+nav{
+    background-color: var(--cor6);
+    padding: 10px;
+    box-shadow: 0px 7px 7px black;
+
+}
+nav a{
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: var(--cor3);
+    color: black;
+    border-radius: 10px;
+}
 
 main{
     background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.422);
 }
+
+
 
 main h1, h3{
     color: var(--cor3);
@@ -60,11 +96,54 @@ main h1, h3{
 
 main h2{
     font-family: var(--font-android);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
 }
 
+main p{
+    text-align: justify;
+    margin: 15px 0px;       /*cima e baixo com 15 e laterais com 0*/
+    line-height: 1.5em;     /*afastamento de uma linha para outra*/
+    text-indent: 30px;      /*adiciona um espaço de 30px no inicio de cada paragrafa*/
+}
+main a{
+    background-color: var(--cor4);
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 2px;
+}
 
+main a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 600px;               /*antes de centralizar com margin auto preciso transformar em um display block*/
+    display: block;
+    margin: auto;
+}
+
+main iframe{
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
 footer{
     background-color: var(--cor6);
     color: white;
+    text-align: center;
+    padding: 6px;
 
+}
+footer a{
+    color: var(--cor3);
+    font-weight: bold;
+
+}
+footer a:hover{
+    font-style: italic;
 }
