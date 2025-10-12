@@ -134,13 +134,15 @@ main img.pequena{
 div.video{
     position: relative;
     padding-bottom: 59%;
-
+    padding: 20px;
+    margin: 0px -20x 30px -20px;
 }
 div.video iframe{
     position: absolute;
     width: 90%;
     height: 90%;
-    left: 4%;
+    left: 5%;
+    top: 5%;
 
 }
 
